@@ -40,6 +40,8 @@ const readAsset = async (filePath: string) => {
 const isNodeError = (err: unknown): err is NodeJS.ErrnoException =>
 	typeof err === "object" && err !== null && "code" in err && typeof (err as { code?: unknown }).code === "string";
 
+export const prerender = true;
+
 export const GET: RequestHandler = async ({ params }) => {
 	const filePath = validatePath(params.slug, params.asset);
 	const file = await readAsset(filePath);
