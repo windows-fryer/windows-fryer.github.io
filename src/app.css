@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@layer components {
+    * { scrollbar-gutter: stable both-edges !important; }
+
+    .post-content h1 { @apply text-3xl font-bold my-2; }
+    .post-content h2 { @apply text-2xl font-bold my-2; }
+
+    .post-content a { @apply text-blue-500 hover:underline; }
+
+    .post-content ul { @apply list-disc pl-5; }
+
+    .post-content img { @apply w-2/3 max-h-full mx-auto; }
+
+    .post-content hr { @apply my-4; }
+}
