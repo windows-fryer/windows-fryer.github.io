@@ -6,7 +6,7 @@
     .post-content h1 { @apply text-3xl font-bold my-2; }
     .post-content h2 { @apply text-2xl font-bold my-2; }
 
-    .post-content a { @apply text-blue-500 hover:underline; }
+    .post-content a { @apply text-blue-500 hover:underline break-all; }
 
     .post-content ul { @apply list-disc pl-5; }
 
