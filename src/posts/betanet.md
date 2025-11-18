@@ -41,8 +41,6 @@ Betanet attempts to layout instructions on how to implement a new anonymized net
 - **Implement multiple cryptographic primitives simultaneously** including SHA-256, ChaCha20-Poly1305, HKDF-SHA256, Ed25519, X25519, and mandatory post-quantum hybrid X25519-Kyber768 by 2027
 - **Disguise all traffic as normal HTTPS browsing** by requiring exact TLS fingerprint mirroring of real websites, including mandatory pre-flight calibration to match JA3/JA4 signatures, ALPN order, and HTTP/2 settings within ±15% tolerance
 
-<br>
-
 In theory, this sounds good. To which I agree. Sadly, this spec was written mostly if not **entirely** by AI. There are obvious flaws inside of this text including but not limited to:
 
 <h2 id="impossible-requirements"> Impossible Implementation Requirements </h2>

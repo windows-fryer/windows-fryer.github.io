@@ -20,7 +20,7 @@ export const load = (async () => {
 				...post.metadata
 			};
 		})
-		.filter((post) => post.published)
+		.filter((post) => post.published || import.meta.env.DEV)
 		.sort(
 			(a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
 		);

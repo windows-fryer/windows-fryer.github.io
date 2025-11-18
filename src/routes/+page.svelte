@@ -4,7 +4,7 @@
 
 	const { data } = $props<{ data: PageData }>();
 
-	const posts = data.posts.sort((a: Post, b: Post) => new Date(a.date).getTime() - new Date(b.date).getTime());
+	const posts = data.posts.sort((a: Post, b: Post) => new Date(b.date).getTime() - new Date(a.date).getTime());
 </script>
 
 <div class="m-2 w-4/5 mx-auto max-w-5xl">

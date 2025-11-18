@@ -16,13 +16,17 @@
 	
 	<hr class="border-dashed my-2" />
 	
+	{#if data.meta.chapters?.length > 0}
+	<h2 class="text-2xl font-bold">Table of Contents</h2>
+
 	<ol class="list-decimal pl-5">
 		{#each data.meta.chapters as chapter}
 				<li><a href={`#${chapter.anchor}`}>{chapter.title}</a></li>
 		{/each}
 	</ol>
-
+	
 	<hr class="border-dashed my-2" />
+	{/if}
 
 	<div class="post-content">
 		<Content />

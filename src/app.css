@@ -1,16 +1,54 @@
 @import "tailwindcss";
 
+/* ============================================
+   Global Styles
+   ============================================ */
+@layer base {
+    * {
+        scrollbar-gutter: stable both-edges !important;
+    }
+}
+
+/* ============================================
+   Post Content Styles
+   Typography and content formatting for markdown posts
+   ============================================ */
 @layer components {
-    * { scrollbar-gutter: stable both-edges !important; }
+    /* Headings */
+    .post-content h1 {
+        @apply text-3xl font-bold my-2;
+    }
 
-    .post-content h1 { @apply text-3xl font-bold my-2; }
-    .post-content h2 { @apply text-2xl font-bold my-2; }
+    .post-content h2 {
+        @apply text-2xl font-bold my-2;
+    }
 
-    .post-content a { @apply text-blue-500 hover:underline break-all; }
+    /* Links */
+    .post-content a {
+        @apply text-blue-500 hover:underline break-all;
+    }
 
-    .post-content ul { @apply list-disc pl-5; }
+    /* Lists */
+    .post-content ol {
+        @apply list-decimal pl-5 my-2;
+    }
+    
+    .post-content ul {
+        @apply list-disc pl-5 my-2;
+    }
 
-    .post-content img { @apply w-2/3 max-h-full mx-auto; }
+    /* Media */
+    .post-content img {
+        @apply w-2/3 max-h-full mx-auto;
+    }
 
-    .post-content hr { @apply my-4; }
+    /* Dividers */
+    .post-content hr {
+        @apply my-4;
+    }
+
+    /* Code blocks */
+    .post-content pre {
+        @apply bg-gray-100 my-2 p-2 rounded-md overflow-x-auto;
+    }
 }
